@@ -1,0 +1,15 @@
+#!/usr/bin/expect -f
+
+set PASSWORD ZhiHu\$2014
+#set IP 182.254.210.207
+set IP 192.168.1.110
+set SRC ./bin/Release/rmserx
+set DIR /data/dzpk/rmserx/rmserx
+
+spawn scp $SRC root@$IP:$DIR
+set timeout 30 
+expect "root@$IP's password:"
+exec sleep 30
+send "$PASSWORD\n"
+set timeout 3
+expect eof

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="rmserx" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/rmserx" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="/usr/lib64/libpthread.so" />
+					<Add library="/usr/lib64/libcrypt.so" />
+					<Add library="/usr/lib64/mysql/libmysqlclient.so" />
+					<Add library="libs/libjson_linux-gcc-4.7.2_libmt.a" />
+					<Add library="libs/libmysqlcppconn-static.a" />
+					<Add library="/usr/lib64/zqltNetD.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/rmserx" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="/usr/lib64/libpthread.so" />
+					<Add library="/usr/lib64/libcrypt.so" />
+					<Add library="/usr/lib64/mysql/libmysqlclient.so" />
+					<Add library="libs/libjson_linux-gcc-4.7.2_libmt.a" />
+					<Add library="libs/libmysqlcppconn-static.a" />
+					<Add library="/usr/lib64/zqltNet.so" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="com/XXTEA.h" />
+		<Unit filename="com/autoLock.h" />
+		<Unit filename="com/base64.h" />
+		<Unit filename="com/common.h" />
+		<Unit filename="com/commonNet.h" />
+		<Unit filename="com/linuxThread.h" />
+		<Unit filename="com/mainLoger.h" />
+		<Unit filename="com/mainNet.h" />
+		<Unit filename="com/md5.h" />
+		<Unit filename="com/mutex.h" />
+		<Unit filename="com/netSocketRecv.h" />
+		<Unit filename="com/netSocketSend.h" />
+		<Unit filename="com/safeHash.h" />
+		<Unit filename="com/safeList.h" />
+		<Unit filename="com/stillAlive.h" />
+		<Unit filename="com/sysConfig.h" />
+		<Unit filename="core/loger/log.cpp" />
+		<Unit filename="core/loger/log.h" />
+		<Unit filename="core/loger/loger.h" />
+		<Unit filename="core/loger/mainLoger.h" />
+		<Unit filename="example/dzpk/Start.cpp" />
+		<Unit filename="example/dzpk/Start.h" />
+		<Unit filename="example/dzpk/championship/cps.cpp" />
+		<Unit filename="example/dzpk/championship/cps.h" />
+		<Unit filename="example/dzpk/championship/cpsCustom.cpp" />
+		<Unit filename="example/dzpk/championship/cpsCustom.h" />
+		<Unit filename="example/dzpk/championship/cpsRecord.cpp" />
+		<Unit filename="example/dzpk/championship/cpsRecord.h" />
+		<Unit filename="example/dzpk/championship/cpsUser.cpp" />
+		<Unit filename="example/dzpk/championship/cpsUser.h" />
+		<Unit filename="example/dzpk/db/db_connect_pool.cpp" />
+		<Unit filename="example/dzpk/db/db_connect_pool.h" />
+		<Unit filename="example/dzpk/db/dzpkDb.cpp" />
+		<Unit filename="example/dzpk/db/dzpkDb.h" />
+		<Unit filename="example/dzpk/dzpkPlay.cpp" />
+		<Unit filename="example/dzpk/dzpkPlay.h" />
+		<Unit filename="example/dzpk/dzpkUser.cpp" />
+		<Unit filename="example/dzpk/dzpkUser.h" />
+		<Unit filename="example/dzpk/include/cppconn/build_config.h" />
+		<Unit filename="example/dzpk/include/cppconn/config.h" />
+		<Unit filename="example/dzpk/include/cppconn/connection.h" />
+		<Unit filename="example/dzpk/include/cppconn/datatype.h" />
+		<Unit filename="example/dzpk/include/cppconn/driver.h" />
+		<Unit filename="example/dzpk/include/cppconn/exception.h" />
+		<Unit filename="example/dzpk/include/cppconn/metadata.h" />
+		<Unit filename="example/dzpk/include/cppconn/parameter_metadata.h" />
+		<Unit filename="example/dzpk/include/cppconn/prepared_statement.h" />
+		<Unit filename="example/dzpk/include/cppconn/resultset.h" />
+		<Unit filename="example/dzpk/include/cppconn/resultset_metadata.h" />
+		<Unit filename="example/dzpk/include/cppconn/sqlstring.h" />
+		<Unit filename="example/dzpk/include/cppconn/statement.h" />
+		<Unit filename="example/dzpk/include/cppconn/warning.h" />
+		<Unit filename="example/dzpk/include/json/autolink.h" />
+		<Unit filename="example/dzpk/include/json/config.h" />
+		<Unit filename="example/dzpk/include/json/features.h" />
+		<Unit filename="example/dzpk/include/json/forwards.h" />
+		<Unit filename="example/dzpk/include/json/json.h" />
+		<Unit filename="example/dzpk/include/json/reader.h" />
+		<Unit filename="example/dzpk/include/json/value.h" />
+		<Unit filename="example/dzpk/include/json/writer.h" />
+		<Unit filename="example/dzpk/include/mysql_connection.h" />
+		<Unit filename="example/dzpk/include/mysql_driver.h" />
+		<Unit filename="example/dzpk/mainDzpk.cpp" />
+		<Unit filename="example/dzpk/mainDzpk.h" />
+		<Unit filename="example/dzpk/standard/custom.cpp" />
+		<Unit filename="example/dzpk/standard/custom.h" />
+		<Unit filename="example/dzpk/standard/dzpk.cpp" />
+		<Unit filename="example/dzpk/standard/dzpk.h" />
+		<Unit filename="example/dzpk/standard/dzpkActivity.cpp" />
+		<Unit filename="example/dzpk/standard/dzpkActivity.h" />
+		<Unit filename="example/dzpk/standard/dzpkCard.cpp" />
+		<Unit filename="example/dzpk/standard/dzpkCard.h" />
+		<Unit filename="example/dzpk/standard/dzpkCustom.cpp" />
+		<Unit filename="example/dzpk/standard/dzpkCustom.h" />
+		<Unit filename="example/dzpk/standard/dzpkHead.h" />
+		<Unit filename="example/dzpk/standard/dzpkParsePacket.cpp" />
+		<Unit filename="example/dzpk/standard/dzpkParsePacket.h" />
+		<Unit filename="example/dzpk/standard/dzpkTask.cpp" />
+		<Unit filename="example/dzpk/standard/dzpkTask.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
